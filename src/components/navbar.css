@@ -1,0 +1,104 @@
+.brand {
+  display: inline;
+}
+
+.brand-orange {
+  background-color: #ffa31a;
+  color: white;
+  border-radius: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.background-orange {
+  background-color: #ffa31a !important;
+  border: none !important;
+}
+
+.background-orange:hover {
+  background-color: #fcbf65 !important;
+}
+
+.white-text{
+  color: white !important;
+}
+
+.homepage-background{
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  position: absolute;
+  height: 92vh;
+  width: 100%;
+}
+
+.homepage-title{
+  font-size: 6em !important;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 10%;
+  color:beige;
+}
+
+.homepage-disc{
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 3%;
+}
+
+.signup-btn{
+  margin-top: 6% !important;
+  margin-left: 3% !important;
+}
+
+.add-new{
+  margin-top: 3%;
+}
+.text-box{
+  margin-top: 3%;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.margin-text-box{
+  margin-top: 1.2%;
+}
+
+.Completed-card{
+  color: #FF512F;
+  font-size: 3.3em;
+}
+
+.display-none{
+  list-style-type: none;
+}
+.no-padding{
+  padding:  0 !important;
+}
+
+.anaul{
+  text-align: left;
+  display: inline;
+  color: #F09819;
+  
+}
+
+.infobtn{
+  text-align: right;
+  position: relative;
+  right: -83%;
+  
+}
+
+.info-card{
+  margin-bottom: 5%;
+}
+
+.total-title{
+  margin-top: 4%;
+  color: #FF512F;
+}
+
+.center-text{
+  text-align: center;
+}
