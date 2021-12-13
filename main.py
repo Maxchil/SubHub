@@ -26,26 +26,24 @@ db = firestore.client()
 #         print(var)
 
 
-
 while True:
-    monthly = 0
-    for i in db.collection('116370148238282853244').get():
-        var = i.to_dict()['price']
+    for i in db.collections():
+        monthly = 0
+        user = ''
 
-        monthly += int(var)
+        for item in i.get():
+            data = item.to_dict()
 
-    data = {"total": monthly}
-    db.collection('116370148238282853244total').document("dzyrfBt61svmvQM3nSX7").update(data)
-    print("104053028103976474718total", monthly)
+            if "total" not in data:
+                monthly += int(item.to_dict()['price'])
+                user = item.to_dict()['userId']
 
-    monthly = 0
-    for i in db.collection('104053028103976474718').get():
-        var = i.to_dict()['price']
 
-        monthly += int(var)
+        if monthly != 0:
+            print(user, monthly)
+            db.collection(f'{user}total').document('total').update(
+                {'total': monthly}
+            )
 
-    data = {"total": monthly}
-    db.collection('104053028103976474718total').document("kS52wIsSlF8vxZVwghbC").update(data)
     time.sleep(5)
-    print("104053028103976474718total", monthly)
 

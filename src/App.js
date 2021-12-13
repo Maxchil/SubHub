@@ -4,7 +4,7 @@ import AddNewService from "./components/AddNewService";
 import TotalLive from "./components/totalWithFirebase";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Subapp from "../src/components/Fixedapp"
-import {useAuth0, useauth0} from "@auth0/auth0-react"
+import {useAuth0} from "@auth0/auth0-react"
 
 //check if date is valid and greater than today javascript (useing format dd/mm/yyyy)
 
